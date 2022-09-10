@@ -2,21 +2,27 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.26.2
-  '@iconify-json/carbon': ^1.1.7
-  '@iconify-json/twemoji': ^1.1.5
+  '@headlessui/vue': ^1.7.0
+  '@iconify/json': 2.1.105
   '@nuxtjs/color-mode': ^3.1.4
   '@pinia/nuxt': ^0.4.1
   '@unocss/nuxt': ^0.45.13
   '@vueuse/nuxt': ^9.1.1
   eslint: ^8.23.0
+  install: ^0.13.0
+  npm: ^8.19.1
   nuxt: ^3.0.0-rc.8
   pinia: ^2.0.21
   typescript: ^4.8.2
 
+dependencies:
+  '@headlessui/vue': 1.7.0
+  install: 0.13.0
+  npm: 8.19.1
+
 devDependencies:
   '@antfu/eslint-config': 0.26.2_yqf6kl63nyoq5megxukfnom5rm
-  '@iconify-json/carbon': 1.1.7
-  '@iconify-json/twemoji': 1.1.5
+  '@iconify/json': 2.1.105
   '@nuxtjs/color-mode': 3.1.4
   '@pinia/nuxt': 0.4.1_typescript@4.8.2
   '@unocss/nuxt': 0.45.13
@@ -487,6 +493,13 @@ packages:
       - supports-color
     dev: true
 
+  /@headlessui/vue/1.7.0:
+    resolution: {integrity: sha512-ClrXMThmo9lrFjHdzDQXsopjCgRA28v+u5s/J+gIAgvS5l3tTAI84GaVghFwxobijL9c6BsVgDQ7SrJ2dS1nLw==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.2.0
+    dev: false
+
   /@humanwhocodes/config-array/0.10.4:
     resolution: {integrity: sha512-mXAIHxZT3Vcpg83opl1wGlVZ9xydbfZO3r5YfRSH6Gpp2J/PfdBP0wbDa2sO6/qRbcalpoevVyW6A/fI6LfeMw==}
     engines: {node: '>=10.10.0'}
@@ -511,16 +524,11 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify-json/carbon/1.1.7:
-    resolution: {integrity: sha512-QULSpNWKaX4auIbjITDynfALdJYvOOy/xZb+aLOqCgvpBcmbz5tbqvow4r25FWtVsi4FHVpNQ8vyJZXsD1Hlxg==}
+  /@iconify/json/2.1.105:
+    resolution: {integrity: sha512-D78gRq6TAHW443TqF2+gR6cXD/zChraxlK1r+YUwKgTaOg0o7oxmpjgHpjuK9Q9ZUhUmeRiTbqP6eOL9X48N2Q==}
     dependencies:
       '@iconify/types': 1.1.0
-    dev: true
-
-  /@iconify-json/twemoji/1.1.5:
-    resolution: {integrity: sha512-1sTyrLUrMF7QhXS8a9XOd2ySgxgESQTRvhtN471QFdqIaXMi7oWB5UUFh0z984s/al4Iclet+O8BZfuhM9t7lg==}
-    dependencies:
-      '@iconify/types': 1.1.0
+      pathe: 0.3.5
     dev: true
 
   /@iconify/types/1.1.0:
@@ -3981,6 +3989,11 @@ packages:
       wrap-ansi: 8.0.1
     dev: true
 
+  /install/0.13.0:
+    resolution: {integrity: sha512-zDml/jzr2PKU9I8J/xyZBQn8rPCAY//UOYNmR01XwNwyfhEWObo2SWfSl1+0tm1u6PhxLwDnfsT/6jB7OUxqFA==}
+    engines: {node: '>= 0.10'}
+    dev: false
+
   /internal-slot/1.0.3:
     resolution: {integrity: sha512-O0DB1JC/sPyZl7cIo78n5dR7eUSwwpYPiXRhTzNxZVAMUuB8vlnRFyLxdrVToks6XPLVnFfbzaVd5WLjhgg+vA==}
     engines: {node: '>= 0.4'}
@@ -4828,6 +4841,87 @@ packages:
     dependencies:
       path-key: 3.1.1
     dev: true
+
+  /npm/8.19.1:
+    resolution: {integrity: sha512-FtWzipzng+NmtTQDXSCvA9D7H4d7vkA7ciahmY89fGK/Eo95pbnKn0hatEUfomj1jUDEXvAEi/tKiQ2nrAc7Jg==}
+    engines: {node: ^12.13.0 || ^14.15.0 || >=16}
+    hasBin: true
+    dev: false
+    bundledDependencies:
+      - '@isaacs/string-locale-compare'
+      - '@npmcli/arborist'
+      - '@npmcli/ci-detect'
+      - '@npmcli/config'
+      - '@npmcli/fs'
+      - '@npmcli/map-workspaces'
+      - '@npmcli/package-json'
+      - '@npmcli/promise-spawn'
+      - '@npmcli/run-script'
+      - abbrev
+      - archy
+      - cacache
+      - chalk
+      - chownr
+      - cli-columns
+      - cli-table3
+      - columnify
+      - fastest-levenshtein
+      - fs-minipass
+      - glob
+      - graceful-fs
+      - hosted-git-info
+      - ini
+      - init-package-json
+      - is-cidr
+      - json-parse-even-better-errors
+      - libnpmaccess
+      - libnpmdiff
+      - libnpmexec
+      - libnpmfund
+      - libnpmhook
+      - libnpmorg
+      - libnpmpack
+      - libnpmpublish
+      - libnpmsearch
+      - libnpmteam
+      - libnpmversion
+      - make-fetch-happen
+      - minimatch
+      - minipass
+      - minipass-pipeline
+      - mkdirp
+      - mkdirp-infer-owner
+      - ms
+      - node-gyp
+      - nopt
+      - npm-audit-report
+      - npm-install-checks
+      - npm-package-arg
+      - npm-pick-manifest
+      - npm-profile
+      - npm-registry-fetch
+      - npm-user-validate
+      - npmlog
+      - opener
+      - p-map
+      - pacote
+      - parse-conflict-json
+      - proc-log
+      - qrcode-terminal
+      - read
+      - read-package-json
+      - read-package-json-fast
+      - readdir-scoped-modules
+      - rimraf
+      - semver
+      - ssri
+      - tar
+      - text-table
+      - tiny-relative-date
+      - treeverse
+      - validate-npm-package-name
+      - which
+      - write-file-atomic
 
   /npmlog/5.0.1:
     resolution: {integrity: sha512-AqZtDUWOMKs1G/8lwylVjrdYgqA4d9nu8hc+0gzRxlDb1I10+FHBGMXs6aiQHFdCUUlqH99MUMuLfzWDNDtfxw==}
